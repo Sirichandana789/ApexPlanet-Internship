@@ -1,0 +1,156 @@
+/* Reset & Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  background: linear-gradient(120deg, #e9defa, #fbfcdb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ffeb3b;
+}
+
+/* Layout */
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input, form textarea, form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+form textarea {
+  resize: none;
+  height: 100px;
+}
+form button {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #4a0e91;
+}
+
+/* Todo */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.todo-input input {
+  flex: 1;
+  padding: 8px;
+}
+.todo-input button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.todo-input button:hover {
+  background: #1a5cc0;
+}
+#todoList {
+  list-style: none;
+}
+#todoList li {
+  background: #f8f8f8;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#todoList li span {
+  flex: 1;
+}
+#todoList li button {
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.edit-btn {
+  background: #ffc107;
+  color: white;
+}
+.delete-btn {
+  background: #e53935;
+  color: white;
+}
+
+/* News */
+.news-section ul {
+  list-style: none;
+  margin-top: 10px;
+}
+.news-section li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
