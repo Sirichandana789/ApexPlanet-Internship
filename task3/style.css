@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #f9fbe7, #e0f7fa);
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #4caf50;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main {
+  padding: 20px;
+}
+
+#quiz-box {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+#options-container button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  background: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+#options-container button.correct {
+  background: #81c784;
+  color: white;
+}
+
+#options-container button.wrong {
+  background: #e57373;
+  color: white;
+}
+
+footer {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+}
+
+#history-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Progress Bar */
+.progress {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 20px;
+  height: 12px;
+}
+
+#progress-bar {
+  height: 12px;
+  background: #4caf50;
+  width: 0%;
+}

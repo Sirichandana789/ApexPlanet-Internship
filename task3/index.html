@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainBolt Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚡ BrainBolt Quiz</h1>
+    <p>Test your knowledge & track your progress</p>
+  </header>
+
+  <main>
+    <section id="quiz-container">
+      <div id="quiz-box">
+        <h2 id="quiz-title">Science Quiz</h2>
+        <div class="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <h3 id="question-title">Question will appear here</h3>
+        <div id="options-container"></div>
+        <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next</button>
+      </div>
+      <p id="score-display"></p>
+    </section>
+
+    <section id="end-screen" style="display:none;">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <button onclick="startNewQuiz()">Start Another Quiz</button>
+      <button onclick="viewHistory()">View Results History</button>
+    </section>
+
+    <section id="history-section" style="display:none;">
+      <h3>📜 Previous Results</h3>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <footer>Designed by ApexPlanet • BrainBolt Edition</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
