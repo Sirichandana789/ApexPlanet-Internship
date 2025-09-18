@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Shop — Products</title>
+
+  <!-- Preload critical font (system-first fallback used; optional) -->
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta for mobile -->
+  <meta name="theme-color" content="#0b766e">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MiniShop</h1>
+
+      <div class="controls">
+        <label class="search">
+          <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+        </label>
+
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="books">Books</option>
+        </select>
+
+        <button id="cartBtn" class="btn cart-btn" aria-haspopup="dialog" aria-controls="cartModal" aria-expanded="false">
+          Cart <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section aria-labelledby="featuredTitle">
+      <h2 id="featuredTitle" class="section-title">Featured Products</h2>
+      <div id="productGrid" class="product-grid" role="list">
+        <!-- Products injected by script -->
+      </div>
+    </section>
+
+    <section class="about">
+      <h3>About</h3>
+      <p>Simple demo shop showing responsive layout, lazy images, and client-side cart. Uses HTML, CSS, and JavaScript only.</p>
+    </section>
+  </main>
+
+  <!-- Cart Modal (hidden by default) -->
+  <dialog id="cartModal" class="cart-modal" aria-labelledby="cartTitle">
+    <h3 id="cartTitle">Your Cart</h3>
+    <div id="cartItems" class="cart-items" role="list"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">Total: ₹<span id="cartTotal">0.00</span></div>
+      <button id="checkoutBtn" class="btn primary">Checkout</button>
+      <button id="closeCartBtn" class="btn">Close</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MiniShop • Built with HTML, CSS & JS</small>
+    </div>
+  </footer>
+
+  <!-- Defer JS for performance -->
+  <script defer src="script.js"></script>
+</body>
+</html>
