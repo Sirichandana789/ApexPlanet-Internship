@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 - Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>My Creative Hub</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#todo">To-Do App</a></li>
+        <li><a href="#products">Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h2>Personal Portfolio</h2>
+    <p>Showcasing my skills and projects.</p>
+    <div class="portfolio-container">
+      <div class="card">About Me</div>
+      <div class="card">Projects</div>
+      <div class="card">Contact</div>
+    </div>
+  </section>
+
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="products">
+    <h2>Product Listing</h2>
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+      <option value="books">Books</option>
+    </select>
+
+    <select id="sortOptions" onchange="sortProducts()">
+      <option value="default">Sort By</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div id="productGrid" class="product-grid"></div>
+  </section>
+
+  <footer>
+    <p>Designed by Siri Chandana Reddy | Task 4 - ApexPlanet</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
